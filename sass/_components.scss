@@ -1,0 +1,127 @@
+/**************************************/
+// LOGO
+
+.header__logo {
+  height: 3.25rem;
+  margin-left: 2rem;
+}
+
+/**************************************/
+// SEARCH
+
+.search {
+  flex: 0 0 40%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--color-grey-light-2);
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 100px;
+    // only use flex-basis on flex items
+    width: 90%;
+    margin-right: -3.25rem;
+    transition: all 0.2s;
+
+    &:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-grey-light-3);
+    }
+  }
+
+  &__input:focus + &__button {
+    background-color: var(--color-grey-light-3);
+  }
+
+  &__input::placeholder {
+    font-weight: 100;
+    color: var(--color-grey-light-4);
+  }
+
+  &__button {
+    border: none;
+    background-color: var(--color-grey-light-2);
+
+    &:active {
+      transform: translateY(0.2rem);
+    }
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--color-grey-dark-3);
+  }
+}
+
+/**************************************/
+// USER NAVIGATION
+
+.user-nav {
+  align-self: stretch;
+
+  display: flex;
+  align-items: center;
+
+  // selects all direct children of user-nav
+  & > * {
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+  }
+
+  & > *:hover {
+    background-color: var(--color-grey-light-2);
+  }
+
+  &__icon-box {
+    position: relative;
+  }
+
+  &__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: var(--color-grey-dark-2);
+  }
+
+  &__notification {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 0.8rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    color: #fff;
+    background-color: var(--color-primary);
+
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__user-box {
+  }
+
+  &__user-img {
+    // display: inline-block;
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+
+  &__user-name {
+  }
+}
