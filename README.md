@@ -1,24 +1,31 @@
-# trillo
+# Trillo
 
-An all-in-one booking app built using SASS and flexbox.
+An all-in-one booking app built with SASS and flexbox.
 
-### This project is built on SASS preprocessor particularly SCSS.
+### Tools & Technologies used:
 
-- You need to have node package manager (NPM) installed on your local machine before installing SASS.
+- SASS: Is a stylesheet language that enable developers write cleaner and maintainable codes. It helps to keep large stylesheets well organized with advanced feature supports like variables, mathematical operators, inheritance, nesting of selectors to avoid code repeatition, mixins that enables developers write reusuable codes, functions and control directives. Codes written in SASS are pre-processed and compiled into CSS for web performance.
 
-- [Visit SASS official website](https://sass-lang.com/dart-sass) for information on how to get SASS up and running.
-- **_Note: Dart SASS was used for this project._**
+- This project was designed with advanced flexbox layouts.
 
-- Use `npm install` to download dev dependencies.
+- [IcoMoon](https://icomoon.io/) free fonts was used for this project. A sprite file containing all icons used in the course of this project is located in the image folder. With this sprite file, SVG icons can be referenced in your HTML on the fly without having to use inline SVGs. Visit icomoon's official website if you wish to add more SVGs to the pack.
 
-- The underlisted tasks will watch for changes in main.scss file, compile and add prefixes to compiled CSS file to ensure browser compatibility then generates a minified version of your CSS file:
+### Usuage
 
-```
-npm run watch:sass
-npm run compile:sass
-npm run prefix:css
-npm run compress:css
+#### Project setup
 
-```
+`npm install` downloads all dev dependencies
 
-- `npm run build:css` to run all tasks.
+#### Development build process
+
+- `npm run start` for auto browser reloads
+- `npm watch:sass` watch for changes in main.scss file
+- `npm compile:sass` compile your main stylesheet into vanilla CSS
+
+#### Compile and minify for production
+
+`npm run build:css` compiles, auto-prefix and minify CSS for production.
+
+### See live demo
+
+[Trillo](https://trilo-bookings.netlify.app/)
