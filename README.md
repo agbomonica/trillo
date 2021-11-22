@@ -8,7 +8,7 @@ An all-in-one booking app built with SASS and flexbox.
 
 - This project was designed with advanced flexbox layouts.
 
-- [IcoMoon](https://icomoon.io/) free fonts was used for this project. A sprite file containing all icons used in the course of this project is located in the image folder. With this sprite file, SVG icons can be referenced in your HTML on the fly without having to use inline SVGs. Visit icomoon's official website if you wish to add more SVGs to the pack.
+- SVGs from [IcoMoon](https://icomoon.io/) was used for this project. A sprite file containing all icons is located in the image folder. With this sprite file, SVG icons can be referenced in your HTML on the fly without having to use inline SVGs. Visit icomoon's official website if you wish to add more SVGs to the pack.
 
 ### Usuage
 
